@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const path = require('path');
 
 // AT /api/notes
 
@@ -15,3 +16,5 @@ router.post('/', (req, res) => {
 router.delete('/:id', (req, res) => {
 
 })
+
+module.exports = router;
