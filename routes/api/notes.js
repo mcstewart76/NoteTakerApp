@@ -9,14 +9,13 @@ const {
 
 // AT /api/notes
 
-//GET /api/notes read db.json and return all saved notes as JSON
+//GET /api/notes read db.json and returns all saved notes as JSON
 notes.get('/', (req, res) => {
     
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
       
 })
-//POST  /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. 
-//You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+//POST  /api/notes 
 notes.post('/', (req, res) => {
     console.log(req.body);
 
@@ -37,7 +36,15 @@ notes.post('/', (req, res) => {
 })
 //DELETE /api/notes/:id
 notes.delete('/:id', (req, res) => {
-
+    const noteId = req.params.id;
+    readFromFile('./db/db.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      const result = json.filter((note) => note.id !== noteId);
+      writeToFile('./db/db.json', result);
+      // Response to the DELETE request
+      res.json(`Item ${noteId} has been deleted.`);
+    });
 })
 
 module.exports = notes;
