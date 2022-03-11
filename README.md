@@ -30,5 +30,5 @@ The license for this repo is covered under Other.
 ## Repo
 You can find a link to the repo at www.github.com/mcstewart76/NoteTakerApp .
 
-##Deployed Application
+## Deployed Application
 The deployed application is at [https://ms-notetakerapp.herokuapp.com/](https://ms-notetakerapp.herokuapp.com/).
