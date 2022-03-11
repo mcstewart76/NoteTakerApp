@@ -10,6 +10,7 @@ A simple tool to jot down notes, and save them and be able to come back to them 
 * [Email](#email)
 * [License](#license)
 * [Repo](#repo)
+* [Deployed Application](#Deployed Application)
 
 ## Usage
 To get started, simply go to the website 
