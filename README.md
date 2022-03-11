@@ -10,7 +10,7 @@ A simple tool to jot down notes, and save them and be able to come back to them 
 * [Email](#email)
 * [License](#license)
 * [Repo](#repo)
-* [Deployed Application](#Deployed Application)
+* [DeployedApplication](#DeployedApplication)
 
 ## Usage
 To get started, simply go to the website 
@@ -30,5 +30,5 @@ The license for this repo is covered under Other.
 ## Repo
 You can find a link to the repo at www.github.com/mcstewart76/NoteTakerApp .
 
-## Deployed Application
+## DeployedApplication
 The deployed application is at [https://ms-notetakerapp.herokuapp.com/](https://ms-notetakerapp.herokuapp.com/).
